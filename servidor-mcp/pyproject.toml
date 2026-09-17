@@ -1,0 +1,13 @@
+[project]
+name = "servidor-mcp-central-de-salas"
+version = "1.0.0"
+description = "Servidor MCP da central de salas da Hill Valley Tech (Streamable HTTP, revisao 2026-07-28)."
+requires-python = ">=3.10"
+dependencies = [
+    "mcp==2.2.0",
+    "uvicorn==0.53.0",
+    "pydantic==2.13.5",
+]
+
+[tool.setuptools]
+py-modules = ["servidor", "dominio"]

@@ -1,0 +1,11 @@
+[project]
+name = "agente-central-de-salas"
+version = "1.0.0"
+description = "Agente A2A da central de salas: host MCP por dentro, servidor A2A por fora."
+requires-python = ">=3.10"
+# Sem dependencia externa: o cliente MCP e o servidor A2A sao construidos sobre
+# a biblioteca padrao (urllib + http.server). Nenhum SDK de LLM, por contrato.
+dependencies = []
+
+[tool.setuptools]
+py-modules = ["agente", "cliente_mcp", "tarefas"]
